@@ -7,9 +7,19 @@ public class music extends vendor{
 
 
 
-    public void set_next(vendor obj){
+    public int display_info(){
 
-        this.next = obj.next;
+        System.out.print("Vendor: ");
+        System.out.println(name);
+        System.out.print("Genre: ");
+        System.out.println(genre);
+        System.out.println();
+
+        return 1;
+    }
+    public void set_next(vendor next){
+
+        this.next = next;
     }
     public vendor get_next(){
 
@@ -19,6 +29,7 @@ public class music extends vendor{
 
         genre = null;
         is_music = true;
+        next = null;
     }
     public music(String thing,int i){
 
@@ -27,6 +38,7 @@ public class music extends vendor{
         name = in.nextLine();
         genre = thing;
         is_music = true;
+        next = null;
 
     }
 }
