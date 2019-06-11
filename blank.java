@@ -1,3 +1,10 @@
+
+/* Lawrence Scroggs Program 4 CS202 06/01/19
+This class holds the blank type sub class.  This class is just used as a holder when first building the
+layout of the vendors.  The idea is to have the vendor map built and switch blanks out with appropriate vendors.
+This is an extension from the abstract base class and gets some of its members and data from there.
+ */
+
 public class blank extends vendor {
 
     protected boolean is_blank;

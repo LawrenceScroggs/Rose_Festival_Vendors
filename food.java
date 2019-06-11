@@ -1,3 +1,11 @@
+/* Lawrence Scroggs 06/01/19 CS202 Program 45yy
+This class is used for the food vendor this will help implement this vendor when building the initial map out
+of what is going where.  This class is used strictly for food and only has room for a food type and the restauraunts
+name.  It has "virtual" members from abstract class and data from it as well.
+ */
+
+
+
 import java.util.Scanner;
 
 public class food extends vendor {

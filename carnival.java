@@ -1,3 +1,11 @@
+/* Lawrence Scroggs Program 4 CS202 06/01/19
+This class holds the carnival type vendor.  This class is used to inform organizer that it
+is used in a carnival setting along with its name and type e.g. (rollercoaster, games, face paint, etc)
+This is an extension from the abstract base class and gets some of its members and data from there.
+ */
+
+
+
 import java.util.Scanner;
 
 public class carnival extends vendor {

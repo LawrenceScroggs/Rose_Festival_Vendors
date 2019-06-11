@@ -1,3 +1,12 @@
+/* Lawrence Scroggs CS202 Program 4 06/01/19
+This class holds all the info from the other classes and implements the CLL.  It has a reference to vendor allowing
+it to take in the different types of classes and build the CLL.  It also has an array that holds all the different types
+of vendors to ensure that I do not get too many of the same type of artist, food, ride, etc.  I will use this class to
+control and build vendor as fit.  User will build blank set up of vendors but be able to add or remove as necessary.
+ */
+
+
+
 import java.util.Scanner;
 import java.util.*;
 
@@ -12,22 +21,26 @@ public class vendor_build {
 
         vendor_build festival = new vendor_build();
 
-        festival.add_vendor();
-        festival.display();
+        int x = 0;
 
-        festival.add_vendor();
-        festival.display();
+        while(x < festival.num_vens) {
 
-        carnival object = new carnival();
-        festival.add_new(object);
+            festival.add_vendor();
+            festival.display();
 
-        festival.display();
+            ++x;
+        }
 
         festival.remove_vendor();
-
         festival.display();
 
         festival.print_array();
+
+        b_tree new_tree = new b_tree();
+
+
+        new_tree.build_tree(festival);
+        new_tree.print_tree();
 
 
     }
@@ -83,9 +96,6 @@ public class vendor_build {
         }
 
         return 1;
-
-
-
 
     }
 
@@ -267,9 +277,9 @@ public class vendor_build {
             return 1;
         }
         else {
-            System.out.println("Moving");
 
             current = current.get_next();
+
         }
         CLL(current,obj);
         return 1;
@@ -371,6 +381,7 @@ public class vendor_build {
         }
 
         build_blank(this.num_vens = in.nextInt());
+
 
     }
 
